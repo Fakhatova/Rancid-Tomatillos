@@ -1,14 +1,25 @@
-// import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import MovieList from './MovieList/MovieList';
 import movieData from './MovieData/Data'
 
-function App(props) {
-  return (
-    <div className="App">
-      <MovieList  movies={movieData.movies}/>
-    </div>
-  );
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      movies: movieData.movies
+    }
+  }
+
+  render() {
+    return(
+      <main className='App'>
+        <h1>Rancid Tomatillos</h1>
+        <MovieList  movies={this.state.movies}/>
+      </main>
+    )
+  }
 }
 
 export default App;
