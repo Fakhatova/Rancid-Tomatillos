@@ -1,19 +1,17 @@
 .movie-card {
    border: black solid 2px;
-   height: 200px;
-   width: 300px;
    background-color: gainsboro;
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
    align-content: center;
-   justify-content: flex-start;
+   justify-content: space-evenly;
    align-items: center;
 }
 
 .movie-image {
-height: 80px;
-width:100px;
+height: 300px;
+width: 300px;
 }
 
 .movie-title {
