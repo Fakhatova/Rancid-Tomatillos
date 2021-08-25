@@ -1,10 +1,9 @@
 import React from 'react' 
 import  './MovieList.css'
+import MovieCard from '../MovieCard/MovieCard'
 
 const MovieList = (props) => {
-  const ListofMovies = props.movies.map(movie => {
-   return <h1>HERE IS GONNA BE MOVIE LIST CARDS</h1>
-  })
+  const ListofMovies = props.movies.map(movie => <MovieCard key={movie.id} movieCard={movie}/>)
   
   return (
       <main className="movie-list">
