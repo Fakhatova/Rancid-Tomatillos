@@ -1,0 +1,7 @@
+.movie-card {
+   border-color: darkorange 1px solid;
+   height: 200px;
+   width: 300px;
+   background-color: gainsboro;
+   display: flex;
+}
