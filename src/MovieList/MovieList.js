@@ -3,7 +3,7 @@ import  './MovieList.css'
 import MovieCard from '../MovieCard/MovieCard'
 
 const MovieList = (props) => {
-  const ListofMovies = props.movies.map(movie => <MovieCard/>)
+  const ListofMovies = props.movies.map(movie => <MovieCard key={movie.id} movieCard={movie}/>)
   
   return (
       <main className="movie-list">

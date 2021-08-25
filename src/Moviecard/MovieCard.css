@@ -10,3 +10,16 @@
    justify-content: flex-start;
    align-items: center;
 }
+
+.movie-image {
+height: 80px;
+width:100px;
+}
+
+.movie-title {
+ color:hotpink
+}
+
+.movie-ratings {
+  background-color: khaki;
+}
