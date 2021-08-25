@@ -1,0 +1,9 @@
+footer {
+  background: lightgrey;
+  padding: 2em 0;
+}
+
+p {
+  font-style: italic;
+  font-weight: lighter;
+}

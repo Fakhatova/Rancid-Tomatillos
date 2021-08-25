@@ -5,4 +5,5 @@
     justify-items: center;
     grid-gap: 20px;
     background-color: darkolivegreen;
+    overflow-y: scroll;
 }
