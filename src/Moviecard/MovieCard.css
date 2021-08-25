@@ -1,7 +1,12 @@
 .movie-card {
-   border-color: darkorange 1px solid;
+   border: black solid 2px;
    height: 200px;
    width: 300px;
    background-color: gainsboro;
    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: flex-start;
+   align-items: center;
 }
