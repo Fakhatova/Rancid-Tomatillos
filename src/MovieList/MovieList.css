@@ -1,0 +1,8 @@
+.movie-list {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    background-color: darkolivegreen;
+}
