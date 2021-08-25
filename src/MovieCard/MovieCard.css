@@ -1,4 +1,5 @@
 .movie-card {
     height: 100vh;
     display: grid;
+    background-color: darkolivegreen;
 }
