@@ -1,12 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-import MovieCard from './MovieCard/MovieCard';
+import MovieList from './MovieList/MovieList';
 import movieData from './MovieData/Data'
 
 function App(props) {
   return (
     <div className="App">
-      <MovieCard  movies={movieData.movies}/>
+      <MovieList  movies={movieData.movies}/>
     </div>
   );
 }
