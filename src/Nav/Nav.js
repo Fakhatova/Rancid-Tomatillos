@@ -1,12 +1,12 @@
 import './Nav.css';
 
 
-const Nav = () => {
+const Nav = ({ goToIndex }) => {
   return (
-    <navbar>
+    <nav>
       <h3>Rancid Tomatillos</h3>
-      <button>Home</button>
-    </navbar>
+      <button onClick={() => goToIndex()}>Home</button>
+    </nav>
   )
 }
 
