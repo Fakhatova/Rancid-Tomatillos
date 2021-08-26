@@ -3,10 +3,10 @@ import './Nav.css';
 
 const Nav = ({ goToIndex }) => {
   return (
-    <navbar>
+    <nav>
       <h3>Rancid Tomatillos</h3>
       <button onClick={() => goToIndex()}>Home</button>
-    </navbar>
+    </nav>
   )
 }
 
