@@ -4,7 +4,7 @@ import Footer from './Footer/Footer';
 import './App.css';
 import MovieList from './MovieList/MovieList';
 import movieData from './MovieData/Data'
-
+import fetchMovieData from './API/AppiCalls';
 
 class App extends Component {
   constructor() {
@@ -14,6 +14,10 @@ class App extends Component {
       movieShow: []
     }
   }
+  
+ componentDidMount = () => {
+
+ }
 
   goToIndex = () => {
     this.setState({movieShow: []})
