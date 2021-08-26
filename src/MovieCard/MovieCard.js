@@ -2,7 +2,6 @@ import React from 'react'
 import '../MovieCard/MovieCard.css'
 
 const MovieCard = ({movieCard}) => {
-  // console.log(movieCard)
   return (
     <article className="movie-card">
       <img  className="movie-image" src={movieCard.poster_path} alt=""/>
