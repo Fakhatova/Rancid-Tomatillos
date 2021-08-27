@@ -10,13 +10,14 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: movieData.movies,
+      movies: [],
       movieShow: []
     }
   }
   
  componentDidMount = () => {
-
+   fetchMovieData()
+   .then(data => this.setState({movies:[ ...data.movies]}))
  }
 
   goToIndex = () => {
