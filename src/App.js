@@ -17,7 +17,7 @@ class App extends Component {
   
  componentDidMount = () => {
    fetchMovieData()
-   .then(data => this.setState({movies:[ ...data.movies]}))
+   .then(data => this.setState({movies:[ ...this.state.movies,...data.movies]}))
  }
 
   goToIndex = () => {
