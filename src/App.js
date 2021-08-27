@@ -11,13 +11,15 @@ class App extends Component {
     super();
     this.state = {
       movies: [],
-      movieShow: []
+      movieShow: [],
+      error: ''
     }
   }
   
  componentDidMount = () => {
    fetchMovieData()
    .then(data => this.setState({movies:[ ...this.state.movies,...data.movies]}))
+   .catch(error => this.setState({error: 'Something went wrong, please try again!'}))
  }
 
   goToIndex = () => {
@@ -34,6 +36,8 @@ class App extends Component {
       <main className='App'>
         <Nav goToIndex={this.goToIndex}/>
         <h1>Rancid Tomatillos</h1>
+        {this.state.error && <p>{this.state.error}</p>}
+        {!this.state.movies.length && <p> Please wait loading ...!</p>}
         {!this.state.movieShow.length && <MovieList  movies={this.state.movies} toggleMovie={this.toggleMovie}/>}
         <MovieList  movies={this.state.movieShow} toggleMovie={this.toggleMovie}/>
         <Footer />
