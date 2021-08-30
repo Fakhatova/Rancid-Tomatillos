@@ -1,10 +1,11 @@
+beforeEach(() => {
+    cy.visit('http://localhost:3000/')
+});
 
 describe('Main  index user flow', () => {
-    beforeEach(() => {
-        crypto.visit('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
-});
-  
-it('Should be able to see page', () => {
+
+it('Should be able visit the page and render Nav bar with correct name and home button', () => {
+    cy.get('nav')
     
 })
 })
