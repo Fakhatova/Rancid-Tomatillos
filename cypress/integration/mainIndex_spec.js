@@ -22,6 +22,7 @@ it('Should be able to see list of movies on dashboard', () => {
     cy.get('.App > :nth-child(3)') // third child of the app class component -> MoviList <main>
 })
  
+
 it('Should be able to see all featured movies with name, image, ratings and tagline', () => {
     cy.get('.App > :nth-child(3) > :nth-child(1)')// third child of the app class component -> MoviList first child MovirCard
     cy.get('img')
