@@ -1,5 +1,6 @@
 beforeEach(() => {
     cy.visit('http://localhost:3000/')
+    cy.fetchData('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2')
 });
 
 describe('Main index user flow', () => {
@@ -21,7 +22,6 @@ it('Should be able to see list of movies on dashboard', () => {
     // maybe we can change naming of this h1 into Movies ? List of Movies? Featured Movies?
     cy.get('.App > :nth-child(3)') // third child of the app class component -> MoviList <main>
 })
- 
 
 it('Should be able to see all featured movies with name, image, ratings and tagline', () => {
     cy.get('.App > :nth-child(3) > :nth-child(1)')// third child of the app class component -> MoviList first child MovirCard
