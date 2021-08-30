@@ -15,5 +15,8 @@ it('Should be able visit the page and render Nav bar with correct name and home 
    // what event/type button holds and where it takes us back 
 // })
 
+it('Should be able to see list of movies on dashboard', () => {
+    
+})
  
 })
