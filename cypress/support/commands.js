@@ -34,13 +34,7 @@
             ]
         }
           });
-       })
-//        cy.visit('http://localhost:3000/')
-//     //    cy.get('img')
-//        cy.get('h4')
-//        cy.get('p')
-//        cy.get('p').contains('Heres a tagline!')
-//    })
+       });
 // 
 //
 // -- This is a child command --

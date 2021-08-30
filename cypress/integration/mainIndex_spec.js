@@ -29,6 +29,6 @@ it('Should be able to see all featured movies with name, image, ratings and tagl
     cy.get('h4')
     cy.get('p')
     cy.get('p').contains('Heres a tagline!')
-    // need to find the way add method coontains or should to check value of img/p/h4 dynamicly 
+    // need to find the way add method coontains or should to check value of img/p/h4 dynamicly on DOM 
 })
 })
