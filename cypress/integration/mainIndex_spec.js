@@ -24,5 +24,10 @@ it('Should be able to see list of movies on dashboard', () => {
  
 it('Should be able to see all featured movies with name, image, ratings and tagline', () => {
     cy.get('.App > :nth-child(3) > :nth-child(1)')// third child of the app class component -> MoviList first child MovirCard
+    cy.get('img')
+    cy.get('h4')
+    cy.get('p')
+    cy.get('p').contains('Heres a tagline!')
+    // need to find the way add method coontains or should to check value of img/p/h4 dynamicly 
 })
 })
