@@ -2,7 +2,7 @@ beforeEach(() => {
     cy.visit('http://localhost:3000/')
 });
 
-describe('Main  index user flow', () => {
+describe('Main index user flow', () => {
 
 it('Should be able visit the page and render Nav bar with correct name and home button', () => {
     cy.get('nav')
@@ -16,6 +16,9 @@ it('Should be able visit the page and render Nav bar with correct name and home 
 // })
 
 it('Should be able to see list of movies on dashboard', () => {
+    cy.get('h1').contains('Rancid Tomatillos')
+    // it looks like we are repeating name of the application twice 👆🏽
+    // maybe we can change naming of this h1 into Movies ? List of Movies? Featured Movies?
     
 })
  
