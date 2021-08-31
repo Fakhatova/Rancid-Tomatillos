@@ -1,0 +1,27 @@
+.movie-detail {
+   border: black solid 2px;
+   background-color: gainsboro;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.movie-image {
+height: 300px;
+width: 300px;
+}
+
+.movie-title {
+ color:hotpink
+}
+
+.movie-ratings {
+  background-color: khaki;
+}
+
+.movie-release {
+  color: green;
+}
