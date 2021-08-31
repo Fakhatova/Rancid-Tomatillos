@@ -7,7 +7,7 @@ const MovieDetails = ({movie}) => {
       <img src={movie.poster_path} alt=""/>
        <h4> {movie.title}</h4>
        <p> {movie.average_rating}</p>
-       <p> {movie.tagline}</p>
+       <p> {movie.release_date}</p>
     </article>
   )
 }
