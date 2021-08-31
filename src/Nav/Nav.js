@@ -1,11 +1,12 @@
 import './Nav.css';
+import { NavLink } from 'react-router-dom';
 
 
-const Nav = ({ goToIndex }) => {
+const Nav = () => {
   return (
     <nav>
       <h3>Rancid Tomatillos</h3>
-      <button onClick={() => goToIndex()}>Home</button>
+      <NavLink to="/">Home</NavLink>
     </nav>
   )
 }
