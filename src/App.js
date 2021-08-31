@@ -26,8 +26,8 @@ class App extends Component {
     return(
       <main className='App'>
         <Nav goToIndex={this.goToIndex}/>
-        <h1>Rancid Tomatillos</h1>
-        {this.state.error && <p>{this.state.error}</p>}
+        <h1>Featured Movies</h1>
+        {this.state.error && <p className="error">{this.state.error}</p>}
         {!this.state.movies.length && <p> Please wait loading ...!</p>}
         <Route
           exact path="/"
