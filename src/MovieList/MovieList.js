@@ -4,7 +4,7 @@ import  './MovieList.css'
 import MovieCard from '../MovieCard/MovieCard'
 
 const MovieList = (props) => {
-  const ListofMovies = props.movies.map(movie => {
+  const listofMovies = props.movies.map(movie => {
     return (
       <Link to={`/${movie.id}`} key={movie.id}>
         <MovieCard movieCard={movie} />
@@ -14,7 +14,7 @@ const MovieList = (props) => {
 
   return (
       <main className="movie-list">
-          {ListofMovies}
+          {listofMovies}
       </main>
   )
 }
