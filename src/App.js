@@ -3,7 +3,6 @@ import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 import './App.css';
 import MovieList from './MovieList/MovieList';
-// import movieData from './MovieData/Data'
 import fetchMovieData from './API/AppiCalls';
 import { Route } from 'react-router-dom';
 
