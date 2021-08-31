@@ -3,33 +3,24 @@ import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 import './App.css';
 import MovieList from './MovieList/MovieList';
-// import movieData from './MovieData/Data'
+import MovieDetails from './MovieDetails/MovieDetails';
 import fetchMovieData from './API/AppiCalls';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       movies: [],
-      movieShow: [],
       error: ''
     }
   }
-  
+
  componentDidMount = () => {
    fetchMovieData()
    .then(data => this.setState({movies:[ ...this.state.movies,...data.movies]}))
    .catch(error => this.setState({error: 'Something went wrong, please try again!'}))
  }
-
-  goToIndex = () => {
-    this.setState({movieShow: []})
-  }
-
-  toggleMovie = (id) => {
-    const movie = this.state.movies.find(movie => movie.id === id)
-    this.state.movieShow.length ? this.setState({movieShow: []}) :this.setState({movieShow: [movie]})
-  }
 
   render() {
     return(
@@ -38,8 +29,19 @@ class App extends Component {
         <h1>Rancid Tomatillos</h1>
         {this.state.error && <p>{this.state.error}</p>}
         {!this.state.movies.length && <p> Please wait loading ...!</p>}
-        {!this.state.movieShow.length && <MovieList  movies={this.state.movies} toggleMovie={this.toggleMovie}/>}
-        <MovieList  movies={this.state.movieShow} toggleMovie={this.toggleMovie}/>
+        <Route
+          exact path="/"
+          render={() => {
+            return <MovieList movies={this.state.movies} />
+          }}
+        />
+        <Route
+          exact path="/:id"
+          render={({match}) => {
+            const movie = this.state.movies.find(movie => movie.id === parseInt(match.params.id))
+            return <MovieDetails movie={movie} />
+          }}
+        />
         <Footer />
       </main>
     )
