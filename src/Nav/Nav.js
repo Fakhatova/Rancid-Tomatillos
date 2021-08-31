@@ -4,7 +4,7 @@ import './Nav.css';
 const Nav = ({ goToIndex }) => {
   return (
     <nav>
-      <h3>Rancid Tomatillos</h3>
+      <h2>Rancid Tomatillos</h2>
       <button onClick={() => goToIndex()}>Home</button>
     </nav>
   )
