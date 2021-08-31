@@ -3,6 +3,7 @@ import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 import './App.css';
 import MovieList from './MovieList/MovieList';
+import MovieDetails from './MovieDetails/MovieDetails';
 import fetchMovieData from './API/AppiCalls';
 import { Route } from 'react-router-dom';
 
@@ -32,6 +33,13 @@ class App extends Component {
           exact path="/"
           render={() => {
             return <MovieList movies={this.state.movies} />
+          }}
+        />
+        <Route
+          exact path="/:id"
+          render={({match}) => {
+            const movie = this.state.movies.find(movie => movie.id === parseInt(match.params.id))
+            return <MovieDetails movie={movie} />
           }}
         />
         <Footer />
