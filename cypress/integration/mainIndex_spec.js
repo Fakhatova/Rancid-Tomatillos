@@ -17,9 +17,7 @@ it('Should be able visit the page and render Nav bar with correct name and home 
 // })
 
 it('Should be able to see list of movies on dashboard', () => {
-    cy.get('h1').contains('Rancid Tomatillos')
-    // it looks like we are repeating name of the application twice 👆🏽
-    // maybe we can change naming of this h1 into Movies ? List of Movies? Featured Movies?
+    cy.get('h1').contains('Featured Movies')
     cy.get('.App > :nth-child(3)') // third child of the app class component -> MoviList <main>
 })
 
@@ -29,6 +27,5 @@ it('Should be able to see all featured movies with name, image, ratings and tagl
     cy.get('h3').contains("Money Plane")
     cy.get('p').contains(6.142857142857143)
     cy.get('p').contains('Heres a tagline!')
-    // need to find the way add method coontains or should to check value of img/p/h4 dynamicly on DOM 
 })
 })

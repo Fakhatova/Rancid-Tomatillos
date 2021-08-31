@@ -35,7 +35,7 @@ class App extends Component {
     return(
       <main className='App'>
         <Nav goToIndex={this.goToIndex}/>
-        <h1>Rancid Tomatillos</h1>
+        <h1>Featured Movies</h1>
         {this.state.error && <p>{this.state.error}</p>}
         {!this.state.movies.length && <p> Please wait loading ...!</p>}
         {!this.state.movieShow.length && <MovieList  movies={this.state.movies} toggleMovie={this.toggleMovie}/>}
