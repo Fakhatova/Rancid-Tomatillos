@@ -4,11 +4,9 @@ describe('Error Status', () => {
         statusCode: 404
       })
       cy.visit('http://localhost:3000/')
-    //   cy.get('.App > :nth-child(4)')
+      cy.get('.error').contains('Something went wrong, please try again!')
       cy.get('.App > p')
       .contains('Please wait loading ...')
+
     })
 })
-
-// cy.get('.App > :nth-child(3)')
-// cy.get('.App > :nth-child(4)')
