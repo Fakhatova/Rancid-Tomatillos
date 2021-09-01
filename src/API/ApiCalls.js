@@ -5,7 +5,13 @@ const fetchMovieData = {
   },
   getSelectedMovie: (id) => {
     return  fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
-      .then(response =>response.json())
+      .then(response => {
+        if (response.ok) {
+          return response.json()
+        } else {
+          return Promise.reject(`error ${response.status}`)
+        }
+      })
   }
 
 }
