@@ -21,7 +21,7 @@ class MovieDetails extends Component {
   render() {
     return (
       <article className="movie-details">
-        <img src={this.state.movie.poster_path} alt="" className="movie-image"/>
+        <img src={this.state.movie.poster_path} alt="Movie Poster" className="movie-image"/>
         <h4 className="movie-title"> {this.state.movie.title}</h4>
         <p className="movie-ratings"> {this.state.movie.average_rating}</p>
         <p className="movie-release"> {this.state.movie.release_date}</p>
