@@ -12,6 +12,9 @@ describe('Error Status', () => {
       .contains('Please wait loading ...')
 
     })
-
+    it('Should display error message when on card click p[age is not found', () => {
+      cy.visit('http://localhost:3000/337401')
+      cy.get('.movie-details')
+    })
     // we need to check now if end point of router is doesnt exist it should to see a error message
 })
