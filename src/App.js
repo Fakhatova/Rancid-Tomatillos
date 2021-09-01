@@ -4,7 +4,7 @@ import Footer from './Footer/Footer';
 import './App.css';
 import MovieList from './MovieList/MovieList';
 import MovieDetails from './MovieDetails/MovieDetails';
-import fetchMovieData from './API/AppiCalls';
+import fetchMovieData from './API/ApiCalls';
 import { Route } from 'react-router-dom';
 
 class App extends Component {
