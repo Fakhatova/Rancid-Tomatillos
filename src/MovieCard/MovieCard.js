@@ -7,7 +7,7 @@ const MovieCard = ({movieCard}) => {
       <img  className="movie-image" src={movieCard.poster_path} alt=""/>
        <h3 className="movie-title"> {movieCard.title}</h3>
        <p className="movie-ratings"> {movieCard.average_rating}</p>
-       <p className="movie-tagline"> Heres a tagline!</p>
+       <p className="movie-release">{movieCard.release_date}</p>
     </article>
   )
 }

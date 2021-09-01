@@ -4,7 +4,7 @@ import Footer from './Footer/Footer';
 import './App.css';
 import MovieList from './MovieList/MovieList';
 import MovieDetails from './MovieDetails/MovieDetails';
-import fetchMovieData from './API/AppiCalls';
+import fetchMovieData from './API/ApiCalls';
 import { Route } from 'react-router-dom';
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
   }
 
  componentDidMount = () => {
-   fetchMovieData()
+   fetchMovieData.getAllMovies()
    .then(data => this.setState({movies:[ ...this.state.movies,...data.movies]}))
    .catch(error => this.setState({error: 'Something went wrong, please try again!'}))
  }
@@ -38,8 +38,7 @@ class App extends Component {
         <Route
           exact path="/:id"
           render={({match}) => {
-            const movie = this.state.movies.find(movie => movie.id === parseInt(match.params.id))
-            return <MovieDetails movie={movie} />
+            return <MovieDetails movieID={parseInt(match.params.id)} />
           }}
         />
         <Footer />
