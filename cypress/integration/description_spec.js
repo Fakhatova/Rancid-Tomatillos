@@ -12,4 +12,9 @@ describe('Movie Description', () => {
         cy.get('.movie-ratings').contains(5.2727272727272725)
         cy.get('.movie-release').contains('2020-09-04')
     })
+    it('Should take back to home page if home link is clicked', () => {
+        cy.visit('http://localhost:3000/337401')
+        cy.get('.home').click()
+        cy.url().should('include', '/')
+    })
 })

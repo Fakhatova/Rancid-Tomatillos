@@ -16,6 +16,7 @@ it('Should be able to see list of movies on dashboard', () => {
     cy.get('h1').contains('Featured Movies')
     cy.get('.App > :nth-child(3)') 
  })
+ 
 it('Should be able to see all featured movies with name, image, ratings and tagline', () => {
     cy.get('.App > :nth-child(3) > :nth-child(1)')
     cy.get('img').invoke('attr', 'src').should('not.be.empty')
