@@ -9,6 +9,7 @@ class MovieDetails extends Component {
       error: ''
     }
   }
+  
 
   render() {
     return (

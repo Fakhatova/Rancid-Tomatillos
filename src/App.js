@@ -38,8 +38,7 @@ class App extends Component {
         <Route
           exact path="/:id"
           render={({match}) => {
-            const movie = this.state.movies.find(movie => movie.id === parseInt(match.params.id))
-            return <MovieDetails movie={movie} />
+            return <MovieDetails movieID={parseInt(match.params.id)} />
           }}
         />
         <Footer />
