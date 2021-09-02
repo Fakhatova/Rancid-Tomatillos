@@ -1,8 +1,7 @@
 .movie-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-gap: 20px;
-    background-color: darkolivegreen;
-    overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+  overflow-y: scroll;
 }

@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
     return(
-      <main className='App'>
+      <main>
         <Nav goToIndex={this.goToIndex}/>
         <h1>Featured Movies</h1>
         {this.state.error && <p className="error">{this.state.error}</p>}
