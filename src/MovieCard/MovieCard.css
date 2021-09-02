@@ -12,15 +12,11 @@
   width: auto;
 }
 
+.movie-info {
+  font-size: .9em;
+}
+
 .movie-title {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: bold;
-}
-
-.movie-ratings {
-  font-size: .8em;
-}
-
-.movie-release {
-  
 }
