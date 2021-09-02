@@ -4,4 +4,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  background-color: #02091B;
+  color: #87C1BF;
 }
