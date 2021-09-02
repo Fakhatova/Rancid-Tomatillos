@@ -2,6 +2,12 @@
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.movie-list::-webkit-scrollbar {
+  display: none;
 }
 
 .list-header {
