@@ -6,16 +6,19 @@ import MovieCard from '../MovieCard/MovieCard'
 const MovieList = (props) => {
   const listofMovies = props.movies.map(movie => {
     return (
-      <Link to={`/${movie.id}`} key={movie.id}>
+      <Link to={`/${movie.id}`} key={movie.id} className="movie-link">
         <MovieCard movieCard={movie} />
       </Link>
     )
   })
 
   return (
-      <main className="movie-list">
+      <section className="movie-list">
+        <p className="list-header">Featured Movies</p >
+        <div className="list-grid">
           {listofMovies}
-      </main>
+        </div>
+      </section>
   )
 }
 

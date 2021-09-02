@@ -1,10 +1,23 @@
 nav {
-  background: lightblue;
+  height: 10%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1em;
+  padding: 0 4em;
+  background: #251B33;
+  color: #9BE0F8;
 }
 
-button {
-  margin: 0 1em;
+.home {
+  background: #9BE0F8;
+  color: #251B33;
+  text-decoration: none;
+  margin: 1em;
+  padding: .5em .8em;
+  font-size: 1.2em;
+  border-radius: .6em;
+}
+
+.home:hover {
+  background: lightgrey;
 }

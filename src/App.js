@@ -16,19 +16,18 @@ class App extends Component {
     }
   }
 
- componentDidMount = () => {
-   fetchMovieData.getAllMovies()
-   .then(data => this.setState({movies:[ ...this.state.movies,...data.movies]}))
-   .catch(error => this.setState({error: 'Something went wrong, please try again!'}))
- }
+  componentDidMount = () => {
+    fetchMovieData.getAllMovies()
+    .then(data => this.setState({movies:[ ...this.state.movies,...data.movies]}))
+    .catch(error => this.setState({error: 'Something went wrong, please try again!'}))
+  }
 
   render() {
-    return(
-      <main className='App'>
+    return (
+      <main>
         <Nav goToIndex={this.goToIndex}/>
-        <h1>Featured Movies</h1>
         {this.state.error && <p className="error">{this.state.error}</p>}
-        {!this.state.movies.length && <p> Please wait loading ...!</p>}
+        {!this.state.movies.length && <p className="loading"> Please wait loading ...!</p>}
         <Route
           exact path="/"
           render={() => {
