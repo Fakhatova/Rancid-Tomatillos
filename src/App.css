@@ -7,3 +7,14 @@ main {
   background-color: #02091B;
   color: #87C1BF;
 }
+
+.error {
+  font-size: 2em;
+  color: #FF706F;
+}
+
+.loading {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+}
