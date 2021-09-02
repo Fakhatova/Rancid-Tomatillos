@@ -13,9 +13,12 @@ const MovieList = (props) => {
   })
 
   return (
-      <main className="movie-list">
+      <section className="movie-list">
+        <p className="list-header">Featured Movies</p >
+        <div className="list-grid">
           {listofMovies}
-      </main>
+        </div>
+      </section>
   )
 }
 

@@ -1,9 +1,21 @@
 .movie-list {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.list-grid {
+  padding: 2em;
+  height: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  grid-gap: 2em;
-  overflow-y: scroll;
+  grid-gap: 1em;
 }
 
 .movie-link {
