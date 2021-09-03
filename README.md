@@ -40,10 +40,10 @@ GitHub Page [link]()
 ##### Wins
 - 100% score on Accessbility, SEO, & Best Practices (tested via Lighthouse)
 
-<td>
-    <img src="/src/Assets/Screenshot 2021-09-03 at 2.23.08 PM.png" alt="SEO score"
-      width="" height="130" />
-  </td>
+     <td>
+          <img src="/src/Assets/Screenshot 2021-09-03 at 2.23.08 PM.png" alt="SEO score"
+          width="" height="130" />
+     </td>
 
 - Responsive application
 ##### Challenges
