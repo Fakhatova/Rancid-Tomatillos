@@ -8,8 +8,7 @@ describe('Error Status', () => {
       }
       cy.visit('http://localhost:3000/')
       cy.get('.error').contains('Something went wrong, please try again!')
-      cy.get('.App > p')
-      .contains('Please wait loading ...')
+      cy.get('.loading').contains('Please wait loading ...')
 
     })
     it('Should display error message when on card click page is not found', () => {
