@@ -18,6 +18,15 @@ GitHub Page [link]()
 
 ### Features 
 
+User can see home page with list of featured movies on a page and scrol down the list.
+
+![choose](/cypress/Assets/recording.gif)
+
+User can click any movie cards and it will take them to a page with further description. User also can click home button right top hand of the Navigate bar and return back to home page.
+
+![choose](/cypress/Assets/recording-1.gif)
+
+
 ### Tools
 - GitHub Project
 - GitHub Issues
@@ -40,10 +49,10 @@ GitHub Page [link]()
 ##### Wins
 - 100% score on Accessbility, SEO, & Best Practices (tested via Lighthouse)
 
-<td>
-    <img src="/src/Assets/Screenshot 2021-09-03 at 2.23.08 PM.png" alt="SEO score"
-      width="" height="130" />
-  </td>
+     <td>
+          <img src="/src/Assets/Screenshot 2021-09-03 at 2.23.08 PM.png" alt="SEO score"
+          width="" height="130" />
+     </td>
 
 - Responsive application
 ##### Challenges
@@ -52,8 +61,8 @@ GitHub Page [link]()
 ##### Overall Impressions
 - Being able to easily refactor the app to implement Router, API data, understand the use of the virtual DOM, components resuability, and how easy it is to maintain components and data in React
 ##### Future Features
-
-
+- Create Login for user
+- User be able to favorite movie
 
 ### Setup Instuctions
 - `git clone` this repository
