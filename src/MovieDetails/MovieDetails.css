@@ -23,8 +23,22 @@
 
 .overal-stats {
    display: flex;
-   width: 55em;
-   background-color: aliceblue;
-   flex-direction: column;
-   align-items: flex-start;
+    width: 55em;
+    background-color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    height: 25em;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    background-color: #02091b45;
+    color: #9be0f8;
+}
+
+.movie-release, 
+.movie-revenue,
+.movie-runtime,
+.movie-ratings,
+.genres {
+   margin: 5px 0 0 0;
+   font-size: 1.3em;
 }
