@@ -36,12 +36,14 @@ class MovieDetails extends Component {
           <article className="movie-details">
             <img src={this.state.movie.poster_path} alt="Movie Poster" className="movie-image"/>
             <h4 className="movie-title"> {this.state.movie.title}</h4>
-            <p className="movie-ratings"> Rating : {roundUpRating}</p>
+            <p className="movie-ratings"> Rating: {roundUpRating}</p>
             <p className="genres"> Genres:&nbsp;{genres} </p>
             <section className="description-container">
               <p className="movie-description">{this.state.movie.overview}</p>
             </section>
-            <p className="movie-release"> Date Release: {this.state.movie.release_date}</p>
+            <p className="movie-release"> Date of release: {this.state.movie.release_date}</p>
+            <p className="movie-revenue"> Revenue: {this.state.movie.revenue}</p>
+            <p className="movie-runtime"> Run time: {this.state.movie.runtime}</p>
           </article>
         }
       </>
