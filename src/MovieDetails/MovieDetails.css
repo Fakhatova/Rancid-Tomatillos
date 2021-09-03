@@ -21,3 +21,10 @@
     border-bottom: #115770 3px solid;
 }
 
+.overal-stats {
+   display: flex;
+   width: 55em;
+   background-color: aliceblue;
+   flex-direction: column;
+   align-items: flex-start;
+}

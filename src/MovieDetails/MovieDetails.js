@@ -39,7 +39,7 @@ class MovieDetails extends Component {
             <p className="genres"> Genres:&nbsp;{genres} </p>
             <p className="movie-release"> Date of release: {this.state.movie.release_date}</p>
             <p className="movie-revenue"> Revenue: {this.state.movie.revenue}</p>
-            <p className="movie-runtime"> Run time: {this.state.movie.runtime}</p>
+            <p className="movie-runtime"> Run time: {this.state.movie.runtime} minutes</p>
             </div>
             <section className="description-container">
               <p className="movie-description">{this.state.movie.overview}</p>
