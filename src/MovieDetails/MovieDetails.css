@@ -1,52 +1,62 @@
 .movie-details {
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 100%;
-   max-width: 1600px;
-   height: 100vh;
-   min-height: 756px;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   margin: 0 auto;
-   flex-wrap: wrap;
-   align-content: space-around;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1600px;
+  height: 100vh;
+  min-height: 756px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-content: space-around;
+  overflow-x: scroll;
+}
+
+.movie-details::-webkit-scrollbar {
+  display: none;
 }
 
 .description-container {
-    font-size: larger;
-    font-weight: bold;
-    height: 10em;
-    background-color: #02091B;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: #115770 3px solid;
-    border-left: none;
-    border-bottom: #115770 3px solid;
-    margin: 0;
+  font-size: larger;
+  font-weight: bold;
+  height: 10em;
+  background-color: #02091B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: #115770 3px solid;
+  border-left: none;
+  border-bottom: #115770 3px solid;
+  margin: 1em 0;
+  padding: 1em 4em;
+  overflow-y: scroll;
+}
+
+.description-container::-webkit-scrollbar {
+  display: none;
 }
 
 .overal-stats {
-   display: flex;
-    width: 55em;
-    background-color: aliceblue;
-    flex-direction: column;
-    align-items: center;
-    height: 25em;
-    border-radius: 5px;
-    justify-content: space-evenly;
-    background-color: #02091b45;
-    color: #9be0f8;
+  display: flex;
+  width: 30em;
+  flex-direction: column;
+  align-items: center;
+  height: 25em;
+  border-radius: 5px;
+  justify-content: space-around;
+  background-color: #02091b99;
+  color: #9be0f8;
 }
 
-.movie-release, 
+.movie-release,
 .movie-revenue,
 .movie-runtime,
 .movie-ratings,
 .genres {
-   margin: 5px 0 0 0;
-   font-size: 1.3em;
+  margin: 5px 0 0 0;
+  font-size: 1.3em;
 }
