@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import PageNotFound from './PageNotFound'
+import GenreList from './GenreList'
+import Rating from '../Rating/Rating'
+import CurrencyElement from './CurrencyElement'
 import fetchMovieData from '../API/ApiCalls'
 import '../MovieDetails/MovieDetails.css'
 
@@ -7,7 +10,7 @@ class MovieDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      movie: {},
+      movie: null,
       error: ''
 
     }
@@ -20,25 +23,21 @@ class MovieDetails extends Component {
   }
 
   render() {
-    let movie;
-    if (this.state.movie.id !== this.props.movieID) {
-    movie = <div>Loading...</div>
-    } else {
-      const roundUpRating = Math.round(this.state.movie.average_rating)
-      const genres = this.state.movie.genres.map(genre => genre)
-      movie = <>
+    return (
+      <>
         {this.state.error && <PageNotFound/>}
-        {!this.state.error &&
+        {this.state.movie &&
           <article className="movie-details" style={
             { backgroundImage: `url(${this.state.movie.backdrop_path})` }
           }>
             <img src={this.state.movie.poster_path} alt="Movie Poster" className="movie-image"/>
             <div className="overal-stats">
               <p className="movie-title"> {this.state.movie.title}</p>
-              <p className="movie-ratings"> Rating: {roundUpRating}</p>
-              <p className="movie-revenue"> Revenue: {this.state.movie.revenue}</p>
+              <Rating rating={this.state.movie.average_rating}/>
+              <CurrencyElement subject={'Budget'} amount={this.state.movie.budget}/>
+              <CurrencyElement subject={'Revenue'} amount={this.state.movie.revenue}/>
               <p className="movie-runtime"> Run time: {this.state.movie.runtime} minutes</p>
-              <p className="genres"> Genres:&nbsp;{genres} </p>
+              <GenreList genres={this.state.movie.genres}/>
               <p className="movie-release"> Date Released: {this.state.movie.release_date}</p>
             </div>
             <section className="description-container">
@@ -47,9 +46,6 @@ class MovieDetails extends Component {
           </article>
         }
       </>
-    }
-    return (
-      <>{movie}</>
     );
   }
 }
