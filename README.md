@@ -43,9 +43,12 @@ GitHub Page [link]()
 * Then `npm start` in your terminal to view it on your browser
 
 ### Collaborators 
-* Farangiz Akhatova [Github](https://github.com/Fakhatova)
-* David Schlundt-Boiden [Github](https://github.com/Davidschlundtbodien)
+* Farangiz Akhatova [GitHub](https://github.com/Fakhatova)
+* David Schlundt-Boiden [GitHub](https://github.com/Davidschlundtbodien)
 
 
 ### Project Managers 
+  ##### Scott Ertmer [GitHub](https://github.com/sertmer)
+
+  ##### Kayla Gordon [GitHub](https://github.com/kaylagordon)
 
