@@ -53,8 +53,6 @@ GitHub Page [link]()
 - Being able to easily refactor the app to implement Router, API data, understand the use of the virtual DOM, components resuability, and how easy it is to maintain components and data in React
 ##### Future Features
 
-
-
 ### Setup Instuctions
 - `git clone` this repository
 - `cd` into the repository in your terminal

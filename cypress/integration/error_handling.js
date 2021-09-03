@@ -13,8 +13,6 @@ describe('Error Status', () => {
     })
     it('Should display error message when on card click page is not found', () => {
       cy.visit('http://localhost:3000/potato')
-      cy.get('div').contains('Loading...')
-      // cy.get('.App > :nth-child(3) > :nth-child(1)')
       cy.get('.description-error').contains('404 Page not found')
     })
 })
