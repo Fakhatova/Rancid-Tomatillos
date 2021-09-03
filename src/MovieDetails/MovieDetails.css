@@ -1,11 +1,17 @@
 .movie-details {
-   background-color: #02091B;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   max-width: 1600px;
+   height: 100vh;
+   min-height: 756px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0 auto;
+   flex-wrap: wrap;
+   align-content: space-around;
 }
 
 .description-container {
