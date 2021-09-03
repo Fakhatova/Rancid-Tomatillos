@@ -15,8 +15,9 @@
 }
 
 .description-container {
-   /* height: 150px; */
-    /* width: 1200px; */
+    font-size: larger;
+    font-weight: bold;
+    height: 10em;
     background-color: #02091B;
     display: flex;
     flex-direction: column;
@@ -25,6 +26,7 @@
     border-top: #115770 3px solid;
     border-left: none;
     border-bottom: #115770 3px solid;
+    margin: 0;
 }
 
 .overal-stats {
