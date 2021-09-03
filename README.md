@@ -1,10 +1,10 @@
 # Rancid Tomatillos
 
-## Overal
-
-In the project directory, you can run:
+## Overview
+Build Application from scratch while learning React, Cypress, Router for user to explore featured movies. Data is rendered by provided API from Turing School Sofware and Design. Spec can be found [here](https://frontend.turing.edu/projects/module-3/rancid-tomatillos-v3.html)
 
 ### Goals 
+
 
 ### Tools
 * GitHub Project
