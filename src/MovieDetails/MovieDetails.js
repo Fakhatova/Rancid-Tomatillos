@@ -36,10 +36,10 @@ class MovieDetails extends Component {
             <div className="overal-stats">
             <h4 className="movie-title"> {this.state.movie.title}</h4>
             <p className="movie-ratings"> Rating: {roundUpRating}</p>
-            <p className="genres"> Genres:&nbsp;{genres} </p>
-            <p className="movie-release"> Date of release: {this.state.movie.release_date}</p>
             <p className="movie-revenue"> Revenue: {this.state.movie.revenue}</p>
             <p className="movie-runtime"> Run time: {this.state.movie.runtime} minutes</p>
+            <p className="genres"> Genres:&nbsp;{genres} </p>
+            <p className="movie-release"> Date Released: {this.state.movie.release_date}</p>
             </div>
             <section className="description-container">
               <p className="movie-description">{this.state.movie.overview}</p>
