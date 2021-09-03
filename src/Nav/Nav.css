@@ -21,3 +21,8 @@ nav {
 .home:hover {
   background: lightgrey;
 }
+
+.home-icon {
+  width: 20px;
+  height: 20px;
+}

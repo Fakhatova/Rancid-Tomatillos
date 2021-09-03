@@ -8,6 +8,7 @@
 }
 
 .movie-image {
+  margin: 20px 0 20px 0;
   border-radius: .3em;
   height: 25em;
   width: auto;
@@ -20,4 +21,5 @@
 .movie-title {
   font-size: 1.7em;
   font-weight: bold;
+  margin: 0;
 }

@@ -1,10 +1,10 @@
 footer {
-  height: 10%;
+  height: 7em;
   color: #9BE0F8;
   background: #251B33;
 }
 
 footer > p {
   font-style: italic;
-  padding: 2em;
+  /* padding: 2em; */
 }
