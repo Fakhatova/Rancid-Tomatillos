@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Rancid Tomatillos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+
+## Overal
 
 In the project directory, you can run:
+
+## Setup Instuctions
+* Clone this repository
+* cd into the repository in your terminal
+* npm i to install required dependencies
+* Then npm start in your terminal to view it on your browser
 
 ### `npm start`
 
