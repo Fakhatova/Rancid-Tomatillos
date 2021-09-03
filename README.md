@@ -3,6 +3,10 @@
 ## Overview
 Build Application from scratch while learning React, Cypress, Router for user to explore featured movies. Data is rendered by provided API from Turing School Sofware and Design. Spec can be found [here](https://frontend.turing.edu/projects/module-3/rancid-tomatillos-v3.html)
 
+GitHub Link [link](https://github.com/Fakhatova/Rancid-Tomatillos)
+
+GitHub Page [link]()
+
 ### Goals 
 * Gain competency with React fundamentals
 * Create a multi-page UX using Router
