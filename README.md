@@ -63,7 +63,7 @@ GitHub Page [link]()
 
 ### Collaborators 
 - Farangiz Akhatova [GitHub](https://github.com/Fakhatova)
-- David Schlundt-Boiden [GitHub](https://github.com/Davidschlundtbodien)
+- David Schlundt-Bodien [GitHub](https://github.com/Davidschlundtbodien)
 
 
 ### Project Managers 
