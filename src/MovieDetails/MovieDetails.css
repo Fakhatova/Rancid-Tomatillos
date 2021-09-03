@@ -1,9 +1,23 @@
-.movie-detail {
-   background-color: gainsboro;
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-content: center;
-   justify-content: space-evenly;
-   align-items: center;
+.movie-details {
+   background-color: #02091B;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.description-container {
+   /* height: 150px; */
+    width: 1200px;
+    background-color: #02091B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: #115770 3px solid;
+    border-left: none;
+    border-bottom: #115770 3px solid;
+}
+
