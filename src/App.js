@@ -29,7 +29,7 @@ class App extends Component {
         {this.state.error && <p className="error">{this.state.error}</p>}
         {!this.state.movies.length && <p className="loading"> Please wait loading ...!</p>}
         <Route
-          exact path="/"
+          exact path="/Rancid-Tomatillos/"
           render={() => {
             return <MovieList movies={this.state.movies} />
           }}
