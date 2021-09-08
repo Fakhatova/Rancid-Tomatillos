@@ -3,8 +3,8 @@ import PageNotFound from './PageNotFound'
 import GenreList from './GenreList'
 import Rating from '../Rating/Rating'
 import CurrencyElement from './CurrencyElement'
-import fetchMovieData from '../API/ApiCalls'
-import '../MovieDetails/MovieDetails.css'
+import fetchMovieData from '../../API/ApiCalls'
+import './MovieDetails.css'
 
 class MovieDetails extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class MovieDetails extends Component {
   render() {
     return (
       <>
-        {this.state.error && this.state.movie && <PageNotFound/>}
+        {this.state.error && <PageNotFound error={'404 Page Not Found'}/>}
         {this.state.movie && 
           <article className="movie-details" style={
             { backgroundImage: `url(${this.state.movie.backdrop_path})` }

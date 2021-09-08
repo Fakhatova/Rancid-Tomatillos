@@ -1,6 +1,6 @@
 import React from 'react'
 import Rating from '../Rating/Rating'
-import '../MovieCard/MovieCard.css'
+import './MovieCard.css'
 
 const MovieCard = ({movieCard}) => {
   return (
