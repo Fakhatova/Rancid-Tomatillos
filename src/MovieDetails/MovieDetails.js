@@ -12,6 +12,7 @@ class MovieDetails extends Component {
     this.state = {
       movie: null,
       error: ''
+      
 
     }
   }
@@ -25,8 +26,8 @@ class MovieDetails extends Component {
   render() {
     return (
       <>
-        {this.state.error && <PageNotFound/>}
-        {this.state.movie &&
+        {this.state.error && this.state.movie && <PageNotFound/>}
+        {this.state.movie && 
           <article className="movie-details" style={
             { backgroundImage: `url(${this.state.movie.backdrop_path})` }
           }>

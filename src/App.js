@@ -28,13 +28,13 @@ class App extends Component {
         <Nav goToIndex={this.goToIndex}/>
         {this.state.error && <p className="error">{this.state.error}</p>}
         {!this.state.movies.length && <p className="loading"> Please wait loading ...!</p>}
-        <Route
+        {this.state.movies && !this.state.error && <Route
           exact path="/"
           render={() => {
             return <MovieList movies={this.state.movies} />
           }}
-        />
-        <Route
+        />} 
+         <Route
           exact path="/:id"
           render={({match}) => {
             return <MovieDetails movieID={parseInt(match.params.id)} />
