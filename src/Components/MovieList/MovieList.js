@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import  './MovieList.css'
 import MovieCard from '../MovieCard/MovieCard'
 
-const MovieList = (props) => {
-  const listofMovies = props.movies.map(movie => {
+const MovieList = ({movies, movieID}) => {
+  const listofMovies = movies.map(movie => {
     return (
-      <Link to={`/${movie.id}`} key={movie.id} className="movie-link">
+      <Link to={`/Rancid-Tomatillos/${movie.id}`} key={movie.id} className="movie-link">
         <MovieCard movieCard={movie} />
       </Link>
     )
