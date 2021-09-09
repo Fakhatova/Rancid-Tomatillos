@@ -5,7 +5,7 @@ Build Application from scratch while learning React, Cypress, Router for user to
 
 GitHub Link [link](https://github.com/Fakhatova/Rancid-Tomatillos)
 
-GitHub Page [link]()
+GitHub Page [link](https://fakhatova.github.io/Rancid-Tomatillos/)
 
 ### Goals 
 - Gain competency with React fundamentals
