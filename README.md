@@ -7,6 +7,12 @@ GitHub Link [link](https://github.com/Fakhatova/Rancid-Tomatillos)
 
 GitHub Page [link](https://fakhatova.github.io/Rancid-Tomatillos/)
 
+### Setup Instuctions
+- `git clone` this repository
+- `cd` into the repository in your terminal
+- `npm i` to install required dependencies
+- Then `npm start` in your terminal to view it on your browser
+
 ### Goals 
 - Gain competency with React fundamentals
 - Create a multi-page UX using Router
@@ -63,12 +69,6 @@ User can click any movie cards and it will take them to a page with further desc
 ##### Future Features
 - Create Login for user
 - User be able to favorite movie
-
-### Setup Instuctions
-- `git clone` this repository
-- `cd` into the repository in your terminal
-- `npm i` to install required dependencies
-- Then `npm start` in your terminal to view it on your browser
 
 ### Collaborators 
 - Farangiz Akhatova [GitHub](https://github.com/Fakhatova)
